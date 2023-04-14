@@ -44,15 +44,6 @@ int main()
 		int Bet = 0;
 		int CardCount = 0;
 
-		/*for (int i = 0; i < 4; i++)
-		{
-			for (int j = 0; j < 13; j++)
-			{
-				printf("%d ", Cards[i][j]);
-			}
-			printf("\n\n");
-		}*/
-
 		while (true)
 		{
 			int rand1 = rand() % 4;
@@ -107,7 +98,7 @@ int main()
 		}
 
 		if (CardCount == 16 || PlayerMoney <= 0)
-			break;
+			ContinueGame = false;
 	}
 
 	return 0;
